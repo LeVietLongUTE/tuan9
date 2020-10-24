@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp">
+            <ImageView
+                android:layout_marginLeft="30dp"
+                android:id="@+id/image"
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/sinhto"/>
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/image"
+                android:text="Sinh Tố"
+                android:textColor="#000"
+                android:textSize="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                />
+            <TextView
+                android:id="@+id/money"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="2$"
+                android:textColor="#000"
+                android:textSize="25dp"
+                android:layout_below="@+id/name"
+                android:layout_toRightOf="@+id/image"
+                android:layout_marginLeft="50dp"
+                />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:visibility="gone"
+                android:id="@+id/checked"/>
+        </RelativeLayout>
+</LinearLayout>
